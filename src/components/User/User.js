@@ -1,5 +1,4 @@
 import React from "react";
-import Typography from '@mui/material/Typography';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -10,10 +9,6 @@ import { styled } from '@mui/material/styles';
 
 const OfferingsWrapper = styled('div')(({ theme }) => ({
   padding: theme.spacing(1),
-}));
-
-const LI = styled(ListItem)(({ theme }) => ({
-  paddingLeft: 0
 }));
 
 const Input = styled(OutlinedInput)(({ theme }) => ({
