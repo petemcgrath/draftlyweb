@@ -2,9 +2,8 @@ import React from "react";
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';s
+import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
-
 
 const OfferingsWrapper = styled('div')(({ theme }) => ({
   padding: theme.spacing(1),
