@@ -11,20 +11,25 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import Header from './components/Header';
-import Intro from './components/Intro';
-import User from './components/User';
+import Header from './components/header';
+import Intro from './components/intro';
+import User from './components/user';
+import { default as NewCommunity } from './components/community';
 
 import theme from './customTheme';
 
-const Wrapper = styled(Container)(({ theme }) => ({
+const Wrapper = styled('main')(({ theme }) => ({
   backgroundColor: '#1E1E1E',
   minHeight: '100vh',
-  paddingBottom: '30px',
+  paddingBottom: theme.spacing(4),
+}));
+
+const Main = styled('main')(({ theme }) => ({
+  padding: theme.spacing(2),
 }));
 
 export default function App({ ...props }) {
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(3);
 
   const basicRouter = () => {
     switch (step) {
@@ -32,6 +37,8 @@ export default function App({ ...props }) {
         return <Intro setStep={setStep} />;
       case 2:
         return <User />;
+      case 3:
+        return <NewCommunity />;
       default:
         return <div>whoops</div>;
     }
@@ -42,7 +49,7 @@ export default function App({ ...props }) {
       <CssBaseline />
       <Wrapper>
         <Header setStep={setStep} />
-        {basicRouter()}
+        <Main>{basicRouter()}</Main>
       </Wrapper>
     </ThemeProvider>
   );
