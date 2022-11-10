@@ -3,18 +3,18 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   typography: {
     h1: {
-      fontFamily: 'Barlow'
+      fontFamily: 'Barlow',
     },
     h2: {
-      fontFamily: 'Barlow'
+      fontFamily: 'Barlow',
     },
     h3: {
       fontFamily: 'Barlow',
-      fontWeight: 'bold'
+      fontWeight: 'bold',
     },
     h4: {
       fontFamily: 'Barlow',
-      fontWeight: 'bold'
+      fontWeight: 'bold',
     },
     h5: {
       fontFamily: 'Barlow',
@@ -24,6 +24,13 @@ const theme = createTheme({
     },
   },
   components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: '#25D9B9',
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {
@@ -35,7 +42,6 @@ const theme = createTheme({
           props: { size: 'large' },
           style: {
             fontSize: '1.063rem',
-            padding: '10px',
             borderRadius: 36,
           },
         },
@@ -46,10 +52,14 @@ const theme = createTheme({
     primary: {
       main: '#3D25D9',
     },
-    text: {
-      primary: '#fff'
+    secondary: {
+      main: '#FFF',
+      contrastText: '#000',
     },
-    divider: '#464646'
+    text: {
+      primary: '#fff',
+    },
+    divider: '#464646',
   },
 });
 

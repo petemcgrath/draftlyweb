@@ -12,7 +12,7 @@ const Input = styled(OutlinedInput)(({ theme }) => ({
   color: '#888',
 }));
 
-const Intro = ({ setStep }) => {
+const User = ({ setStep }) => {
   return (
     <>
       <Box
@@ -58,7 +58,7 @@ const Intro = ({ setStep }) => {
           padding: theme.spacing(3),
         })}
       >
-        <Button size='large' variant='contained'>
+        <Button size='large' variant='contained' onClick={() => setStep(3)}>
           Connect your wallet
         </Button>
       </Stack>
@@ -66,4 +66,4 @@ const Intro = ({ setStep }) => {
   );
 };
 
-export default Intro;
+export default User;

@@ -3,7 +3,6 @@ import { useState } from 'react';
 
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
-import Container from '@mui/material/Container';
 import { styled } from '@mui/material/styles';
 
 import '@fontsource/roboto/300.css';
@@ -36,7 +35,7 @@ export default function App({ ...props }) {
       case 1:
         return <Intro setStep={setStep} />;
       case 2:
-        return <User />;
+        return <User setStep={setStep} />;
       case 3:
         return <NewCommunity />;
       default:
