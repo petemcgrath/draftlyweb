@@ -1,7 +1,6 @@
 import React from 'react';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import Box from '@mui/material/Box';
-import InputBase from '@mui/material/InputBase';
 import TextareaAutosize from '@mui/material/TextareaAutosize';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
