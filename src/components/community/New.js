@@ -11,12 +11,6 @@ import CustomizedInputBase from './InputGroupTest.js';
 import ImageUploadCard from './ImageUploadCard';
 import { styled } from '@mui/material/styles';
 
-const StyledInput = styled(InputBase)(({ theme }) => ({
-  '& ::placeholder': {
-    opacity: 1,
-  },
-}));
-
 const Input = styled(OutlinedInput)(({ theme }) => ({
   background: '#000',
   border: '1px solid #333',
