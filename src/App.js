@@ -28,7 +28,7 @@ const Main = styled('main')(({ theme }) => ({
 }));
 
 export default function App({ ...props }) {
-  const [step, setStep] = useState(3);
+  const [step, setStep] = useState(1);
 
   const basicRouter = () => {
     switch (step) {
