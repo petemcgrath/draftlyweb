@@ -44,7 +44,7 @@ const GridItemOfferings = () => (
   >
     <Grid item xs={12} sm={4} container rowSpacing={2} alignItems='center'>
       <Grid item xs={2} sm={12}>
-        <Avatar sx={{ bgcolor: pink[500] }}>
+        <Avatar sx={{ bgcolor: pink[500], margin: '0 auto' }}>
           <CalendarMonthIcon />
         </Avatar>
       </Grid>
@@ -84,7 +84,7 @@ const GridItemOfferings = () => (
 
     <Grid item xs={12} sm={4} container rowSpacing={2} alignItems='center'>
       <Grid item xs={2} sm={12}>
-        <Avatar sx={{ bgcolor: pink[500] }}>
+        <Avatar sx={{ bgcolor: pink[500], margin: '0 auto' }}>
           <CalendarMonthIcon />
         </Avatar>
       </Grid>
