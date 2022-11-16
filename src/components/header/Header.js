@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import logo from '../../assets/draftlyLogo.svg';
 import { styled } from '@mui/material/styles';
 
@@ -8,14 +8,14 @@ const Wrapper = styled('div')(({ theme }) => ({
 }));
 
 const Logo = styled('img')(({ theme }) => ({
-  height: '10vmin',
+  height: 32,
   verticalAlign: 'bottom',
 }));
 
-const Header = ({setStep}) => {
+const Header = ({ setStep }) => {
   return (
     <Wrapper>
-      <Logo src={logo} alt="logo" onClick={() => setStep(1)} />
+      <Logo src={logo} alt='logo' onClick={() => setStep(1)} />
     </Wrapper>
   );
 };
