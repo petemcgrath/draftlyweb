@@ -43,7 +43,7 @@ export default function CustomizedInputBase() {
           elevation={0}
           aria-label='menu'
         >
-          draft.ly/
+          draft.ly/clubs/
         </Paper>
         <StyledInput
           sx={{ ml: 1, flex: 1, color: '#888', backgroundColor: 'transparent' }}
