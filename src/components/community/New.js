@@ -29,7 +29,7 @@ const FormBox = styled(Paper)(({ theme }) => ({
   minHeight: 400,
 }));
 
-const Intro = ({ setStep }) => {
+const NewCommunity = ({ setStep }) => {
   return (
     <Grid container>
       <Grid item xs={12} md={6} mdOffset={3}>
@@ -120,7 +120,7 @@ const Form = ({ setStep }) => (
         padding: theme.spacing(3),
       })}
     >
-      <Button size='large' variant='contained'>
+      <Button size='large' variant='contained' onClick={() => setStep(4)}>
         Create My Community
       </Button>
     </Stack>
@@ -133,4 +133,4 @@ const Form = ({ setStep }) => (
   </>
 );
 
-export default Intro;
+export default NewCommunity;

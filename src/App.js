@@ -15,6 +15,7 @@ import Header from './components/header';
 import Intro from './components/intro';
 import User from './components/user';
 import { default as NewCommunity } from './components/community';
+import Congrats from './components/congratulations';
 
 import theme from './customTheme';
 
@@ -34,7 +35,9 @@ export default function App({ ...props }) {
       case 2:
         return <User setStep={setStep} />;
       case 3:
-        return <NewCommunity />;
+        return <NewCommunity setStep={setStep} />;
+      case 4:
+        return <Congrats />;
       default:
         return <div>whoops</div>;
     }
